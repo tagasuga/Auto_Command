@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+    .nav-sidebar > .active > a{
+        color: #851211;
+        background-color: #53245d;
+    }
+</style>
+</head>
+<body style="background: #393D49;width:max-content">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" role="navigation"  >
+<div class="container" >
+<div class=" navbar-header">
+    <a href="/welcome/" target="mainFrame" class="navbar-brand active" style=" font-size: 22px ; color: #FFFFFF;height: 20px;margin-left: 20px"><strong>&nbsp&nbsp自动化测试平台</strong></a>
+</div>
+</div>
+</nav>
+<div class="row" style="margin-top: -20px;margin-left: 20px;">
+        <div class="col-md-3" >
+            <div class="panel-group table-responsive" role="tablist">
+                <div class="panel panel-primary left-Menu" >
+                    <div class="panel-heading" id="collapseListGroupHeading1" data-toggle="collapse" data-target="#collapseListGroup1" role="button" style="background-color: #393D49; color:#FFFFFF ">
+                        <h1 class="panel-title" style="font-size: 19px"><span class="glyphicon glyphicon-list"></span>&nbsp&nbsp&nbsp&nbsp项目管理</h1>
+                    </div>
+                    <div id="collapseListGroup1" class="panel-collapse collapse" role="button" aria-labelledby="collapseListGroupHeading1" >
+                        <ul class="list-group">
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left" href="../product_manage" target="mainFrame" style="color:#FFFFFF">&nbsp&nbsp项目查看</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary left-Menu" >
+                    <div class="panel-heading" id="collapseListHeading2" data-toggle="collapse" data-target="#collapseListGroup2" role="button" style="background-color: #393D49; color:#ffffff">
+                        <h2 class="panel-title" style="font-size: 19px"><span class="glyphicon glyphicon-refresh"></span>&nbsp&nbsp&nbsp&nbsp用例管理</h2>
+                    </div>
+                    <div id="collapseListGroup2" class="panel-collapse collapse" role="button" aria-labelledby="collapseListHeading2">
+                        <ul class="list-group">
+                            <li class="list-group-item " style="background-color: #393D49" data-target=""><a class="menu-item-left" data-target="" style="color:#FFFFFF" href="/cmdcase_manage/" target="mainFrame">&nbsp&nbspLinux指令</a></li>
+                            <li class="list-group-item " style="background-color: #393D49" data-target=""><a class="menu-item-left" data-target="" style="color:#FFFFFF" href="/apis_manage/" target="mainFrame">&nbsp&nbsp单一接口</a></li>
+                            <li class="list-group-item " style="background-color: #393D49" data-target=""><a class="menu-item-left" data-target="" style="color:#FFFFFF" href="/apitest_manage/" target="mainFrame">&nbsp&nbsp流程接口</a></li>
+                            <li class="list-group-item " style="background-color: #393D49" data-target=""><a class="menu-item-left" data-target="" style="color:#FFFFFF" href="/appcase_manage/" target="mainFrame">&nbsp&nbspapp用例</a></li>
+                            <li class="list-group-item " style="background-color: #393D49" data-target=""><a class="menu-item-left" data-target="" style="color:#FFFFFF" href="/webcase_manage/" target="mainFrame">&nbsp&nbspweb用例</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary left-Menu">
+                    <div class="panel-heading" id="collapseListHeading3" data-toggle="collapse" data-target="#collapseListGroup3" role="button" style="background-color: #393D49; color:#FFFFFF">
+                        <h3 class="panel-title" style="font-size: 19px"><span class="glyphicon glyphicon-phone" ></span>&nbsp&nbsp&nbsp&nbsp测试计划管理</h3>
+                    </div>
+                    <div id="collapseListGroup3" class="panel-collapse collapse" role="button" aria-labelledby="collapseListHeading3">
+                        <ul class="list-group">
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left" data-target="" style="color:#ffffff" href="/periodic_task/" target="mainFrame">&nbsp&nbsp测试计划</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary left-Menu">
+                    <div class="panel-heading" id="collapseListHeading13" data-toggle="collapse" data-target="#collapseListGroup13" role="button" style="background-color: #393D49; color:#FFFFFF">
+                        <h3 class="panel-title" style="font-size: 19px"><span class="glyphicon glyphicon-phone"></span>&nbsp&nbsp&nbsp&nbspbug管理</h3>
+                    </div>
+                    <div id="collapseListGroup13" class="panel-collapse collapse" role="button" aria-labelledby="collapseListHeading13">
+                        <ul class="list-group">
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left" data-target="" style="color:#ffffff" href="/bug_manage/" target="mainFrame">&nbsp&nbspbug管理</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary left-Menu">
+                    <div class="panel-heading" id="collapseListHeading5" data-toggle="collapse" data-target="#collapseListGroup5" role="button" style="background-color: #393D49; color:#FFFFFF">
+                        <h6 class="panel-title" style="font-size: 19px"><span class="glyphicon glyphicon-hourglass"></span>&nbsp&nbsp&nbsp&nbsp测试报告</h6>
+                    </div>
+                    <div id="collapseListGroup5" class="panel-collapse collapse" role="button" aria-labelledby="collapseListHeading5">
+                        <ul class="list-group">
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left"  style="color:#ffffff" href="/cmdtest_report/" target="mainFrame">&nbsp&nbspLinux测试报告</a></li>
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left"  style="color:#ffffff" href="/test_report/" target="mainFrame">&nbsp&nbsp单一接口测试报告</a></li>
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left"  style="color:#ffffff" href="/apitest_report/" target="mainFrame">&nbsp&nbsp接口测试报告</a></li>
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left"  style="color:#ffffff" href="/apptest_report/" target="mainFrame">&nbsp&nbspapp测试报告</a></li>
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left"  style="color:#ffffff" href="/webtest_report/" target="mainFrame">&nbsp&nbspWeb测试报告</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary left-Menu">
+                    <div class="panel-heading" id="collapseListHeading6" data-toggle="collapse" data-target="#collapseListGroup6" role="button" style="background-color: #393D49; color:#FFFFFF">
+                        <h7 class="panel-title" style="font-size: 19px"><span class="glyphicon glyphicon-list-alt"></span>&nbsp&nbsp&nbsp&nbsp系统设置</h7>
+                    </div>
+                    <div id="collapseListGroup6" class="panel-collapse collapse" role="button" aria-labelledby="collapseListHeading6">
+                        <ul class="list-group">
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left" data-target="" style="color:#ffffff" href="/set_manage/" target="mainFrame">&nbsp&nbsp参数设置</a></li>
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left" data-target="" style="color:#ffffff" href="/user/" target="mainFrame">&nbsp&nbsp用户管理</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary left-Menu">
+                    <div class="panel-heading" id="collapseListHeading9" data-toggle="collapse" data-target="#collapseListGroup9" role="button" style="background-color: #393D49; color:#FFFFFF">
+                        <h10 class="panel-title" style="font-size: 19px"><span class="glyphicon glyphicon-tags"></span>&nbsp&nbsp&nbsp&nbsp邮件发送配置</h10>
+                    </div>
+                    <div id="collapseListGroup9" class="panel-collapse collapse" role="button" aria-labelledby="collapseListHeading9">
+                        <ul class="list-group">
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left" data-target="" style="color:#ffffff" href="/email_add_page/" target="mainFrame">&nbsp&nbsp邮件配置</a></li>
+                            <li class="list-group-item" style="background-color: #393D49"><a class="menu-item-left" data-target="" style="color:#ffffff">&nbsp&nbsp数据库配置</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $(".panel-heading").click(function(e){
+            /*切换折叠指示图标*/
+            $(this).find("span").toggleClass("glyphicon-chevron-down");
+            $(this).find("span").toggleClass("glyphicon-chevron-up");
+        });
+    });
+</script>
+        </div>
+</div>
+</body>
+</html>
