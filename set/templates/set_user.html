@@ -1,7 +1,5 @@
 ﻿<html lang="zh-CN">
-<!---------------------------------------------------------------------------
-作者：邹辉《自动化平台测试开发》书；日期：2018年1月；版本：autotestplat V1.0
------------------------------------------------------------------------------>
+
 <head>
 {% load bootstrap4 %}
 {% bootstrap_css %}
@@ -63,10 +61,13 @@
 
 <!-- 搜索栏-->
 <div class="page-header" style="padding-top: 0px;">
-<form class="navbar-form" method="get" action="/usersearch/"> 
+<form class="navbar-form" method="get" action="/usersearch/">
+ 
 {% csrf_token %}     
-<input type="search" name="username" placeholder="名称" required>  
-<button type="submit">搜索</button>   
+<input type="search" name="username" placeholder="名称" required>
+  
+<button type="submit">搜索</button>
+   
 <!-- 增加用户-->
 <div style="float:right;width:65%">
 <select name="User" id="id_User">
